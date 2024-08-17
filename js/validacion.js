@@ -1,3 +1,11 @@
+function showAlertSuccess() {
+    document.getElementById("alert-success").classList.add("show");
+}
+
+function showAlertError() {
+    document.getElementById("alert-danger").classList.add("show");
+}
+
 document.getElementById('regBtn').addEventListener('click', function () {
     let nombre = document.getElementById("nombre").value.trim();
     let apellido = document.getElementById("apellido").value.trim();
@@ -16,11 +24,3 @@ document.getElementById('regBtn').addEventListener('click', function () {
         return;
     }
 });
-
-function showAlertSuccess() {
-    document.getElementById("alert-success").classList.add("show");
-}
-
-function showAlertError() {
-    document.getElementById("alert-danger").classList.add("show");
-}
