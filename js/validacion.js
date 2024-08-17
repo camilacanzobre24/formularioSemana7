@@ -25,13 +25,9 @@ document.getElementById('regBtn').addEventListener('click', function () {
 });
 
 function showAlertError() {
-    const alertDanger = document.getElementById('alert-danger');
-    alertDanger.classList.add('show');
-    alertDanger.classList.remove('fade');
-  }
+    const alertDanger = document.getElementById('alert-danger').classList.add('show');
+}
 
-  function showAlertSuccess() {
-    const alertSucces = document.getElementById("alert-success");
-    alertSucces.classList.add('show');
-    alertSucces.classList.remove('fade');
-  }
+function showAlertSuccess() {
+    const alertSucces = document.getElementById("alert-success").classList.add('show');
+}
