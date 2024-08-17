@@ -9,6 +9,10 @@ document.getElementById('regBtn').addEventListener('click', function () {
     if(!nombre || !apellido || email || password1 || password2 || terminos ){
         showAlertError();
     }
+
+    if(password1.lenght < 5){
+        showAlertError();
+    }
 });
 
 function showAlertSuccess() {
