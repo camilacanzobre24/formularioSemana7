@@ -24,3 +24,15 @@ document.getElementById('regBtn').addEventListener('click', function () {
         return;
     }
 });
+
+function showAlertError() {
+    const alertDanger = document.getElementById('alert-danger');
+    alertDanger.classList.add('show');
+    alertDanger.classList.remove('fade');
+  }
+
+  function showAlertSuccess() {
+    const alertSucces = document.getElementById("alert-success");
+    alertSucces.classList.add('show');
+    alertSucces.classList.remove('fade');
+  }
