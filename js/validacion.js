@@ -14,12 +14,12 @@ document.getElementById('regBtn').addEventListener('click', function () {
     let password2 = document.getElementById("password2").value.trim();
     let terminos = document.getElementById("terminos").checked;
 
-    if(!nombre || !apellido || email || password1 || password2 || terminos ){
+    if(!nombre || !apellido || !email || !password1 || !password2 || !terminos ){
         showAlertError();
         return;
     }
 
-    if(password1.lenght < 5){
+    if(password1.length < 6){
         showAlertError();
         return;
     }
