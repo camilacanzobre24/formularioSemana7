@@ -15,6 +15,13 @@ document.getElementById('regBtn').addEventListener('click', function () {
         showAlertError();
         return;
     }
+
+    if(password1 !== password2){
+        showAlertError();
+        return;
+    }
+
+    showAlertSuccess();
 });
 
 function showAlertError() {
