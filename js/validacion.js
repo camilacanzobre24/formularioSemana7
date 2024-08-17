@@ -8,10 +8,12 @@ document.getElementById('regBtn').addEventListener('click', function () {
 
     if(!nombre || !apellido || email || password1 || password2 || terminos ){
         showAlertError();
+        return;
     }
 
     if(password1.lenght < 5){
         showAlertError();
+        return;
     }
 });
 
